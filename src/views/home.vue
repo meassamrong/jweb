@@ -3,19 +3,21 @@
         <div class="walpaper">
             <img id="walpapers" alt="" src="https://thetravelauthor.com/wp-content/uploads/2022/06/angkorwat.jpg">
         </div>
-        <div class="datetime">
-        <div class="date">
-          <span id="dayname">Day</span>,
-          <span id="month">Month</span>
-          <span id="daynum">00</span>,
-          <span id="year">Year</span>
+        <div class="times">
+          <div class="datetime">
+          <div class="date">
+            <span id="dayname">Day</span>,
+            <span id="month">Month</span>
+            <span id="daynum">00</span>,
+            <span id="year">Year</span>
+          </div>
+          <div class="time">
+            <span id="hour">00</span>: <span id="minutes">00</span>:
+            <span id="seconds">00</span>
+            <span id="period">AM</span>
+          </div>
         </div>
-        <div class="time">
-          <span id="hour">00</span>: <span id="minutes">00</span>:
-          <span id="seconds">00</span>
-          <span id="period">AM</span>
         </div>
-      </div>
         <div class="nav">
 
         </div>
@@ -26,7 +28,7 @@
         <div class="container">
             <div class="footer-menu">
                 <ul>
-                    <li><i class="bi bi-github"></i></li>
+                    <li><a href="https://github.com/" target="__blank"><i class="bi bi-github"></i></a></li>
                     <li><i class="bi bi-chat-dots"></i></li>
                     <li><i class="bi bi-terminal"></i></li>
                     <li><i class="bi bi-x-diamond-fill"></i></li>
@@ -51,8 +53,8 @@
 }
 .times{
     position: absolute;
-    z-index: 999;
-    top: 5%;
+    z-index: 1;
+    top: 50px;
     left: 50%;
     transform: translate(-50%);
 
@@ -149,6 +151,7 @@
 .footer-menu ul li:hover {
     background-color: rgba(255, 255, 255, 1);
     font-size: 40px;
+    position: relative;
 
 }
 </style>
